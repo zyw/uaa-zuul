@@ -19,6 +19,9 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
 import org.springframework.security.oauth2.provider.code.AuthorizationCodeServices;
 import org.springframework.security.oauth2.provider.code.JdbcAuthorizationCodeServices;
+import org.springframework.security.oauth2.provider.token.DefaultTokenServices;
+import org.springframework.security.oauth2.provider.token.TokenEnhancer;
+import org.springframework.security.oauth2.provider.token.TokenEnhancerChain;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.JdbcTokenStore;
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
@@ -29,6 +32,8 @@ import org.springframework.security.oauth2.provider.token.store.redis.RedisToken
 import javax.jws.soap.SOAPBinding;
 import javax.sql.DataSource;
 import java.security.KeyPair;
+import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by wangyunfei on 2017/6/9.
@@ -71,17 +76,36 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 //token存储
                 .tokenStore(tokenStore())
                 .accessTokenConverter(accessTokenConverter());
+
+       /* // 自定义token生成方式
+        TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
+        tokenEnhancerChain.setTokenEnhancers(Arrays.asList(customerEnhancer(), accessTokenConverter()));
+        endpoints.tokenEnhancer(tokenEnhancerChain);
+
+        // 配置TokenServices参数
+        DefaultTokenServices tokenServices = (DefaultTokenServices) endpoints.getDefaultAuthorizationServerTokenServices();
+        tokenServices.setTokenStore(endpoints.getTokenStore());
+        tokenServices.setSupportRefreshToken(true);
+        tokenServices.setClientDetailsService(endpoints.getClientDetailsService());
+        tokenServices.setTokenEnhancer(endpoints.getTokenEnhancer());
+        tokenServices.setAccessTokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(1)); // 1天
+        endpoints.tokenServices(tokenServices);
+
+        super.configure(endpoints);*/
     }
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security
                 .tokenKeyAccess("permitAll()")
+                //允许表单提交
+                .allowFormAuthenticationForClients()
                 .checkTokenAccess("isAuthenticated()");
     }
 
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
+        //可以把下面信息写入数据库中，使用 clients.withClientDetails(ClientDetailsService clientDetailsService)
         clients.inMemory()
                 .withClient("android")
                 .scopes("xx1")
@@ -91,5 +115,15 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .withClient("webapp")
                 .scopes("xx2")
                 .authorizedGrantTypes("implicit","password");
+    }
+
+    /**
+     * 注入自定义token生成方式
+     *
+     * @return
+     */
+    @Bean
+    public TokenEnhancer customerEnhancer() {
+        return new CustomTokenEnhancer();
     }
 }

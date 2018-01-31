@@ -39,7 +39,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .httpBasic();
     }
 
-    @Override
+    /*@Override
     public void configure(ResourceServerSecurityConfigurer config) {
         config.tokenServices(tokenServices());
     }
@@ -50,5 +50,5 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         final DefaultTokenServices defaultTokenServices = new DefaultTokenServices();
         defaultTokenServices.setTokenStore(tokenStore);
         return defaultTokenServices;
-    }
+    }*/
 }
