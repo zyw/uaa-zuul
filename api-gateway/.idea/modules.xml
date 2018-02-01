@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/../demo-spring-security/demo-spring-security.iml" filepath="$PROJECT_DIR$/../demo-spring-security/demo-spring-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/../discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/../discovery-service/discovery-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../order-service/order-service.iml" filepath="$PROJECT_DIR$/../order-service/order-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../resource-config/resource-config.iml" filepath="$PROJECT_DIR$/../resource-config/resource-config.iml" />
     </modules>
   </component>
 </project>

@@ -119,7 +119,6 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 
     /**
      * 注入自定义token生成方式
-     *
      * @return
      */
     @Bean

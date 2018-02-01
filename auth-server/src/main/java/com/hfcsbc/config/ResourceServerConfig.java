@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Created by wangyunfei on 2017/6/9.
  */
-@Configuration
+/*@Configuration
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
@@ -36,10 +36,13 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .authorizeRequests()
                 .anyRequest().authenticated()
             .and()
-                .httpBasic();
+                .httpBasic()
+            .and()
+                .sessionManagement()
+                .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }
 
-    /*@Override
+    *//*@Override
     public void configure(ResourceServerSecurityConfigurer config) {
         config.tokenServices(tokenServices());
     }
@@ -50,5 +53,5 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         final DefaultTokenServices defaultTokenServices = new DefaultTokenServices();
         defaultTokenServices.setTokenStore(tokenStore);
         return defaultTokenServices;
-    }*/
-}
+    }*//*
+}*/

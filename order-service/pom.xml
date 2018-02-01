@@ -79,7 +79,11 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>com.hfcsbc.config</groupId>
+			<artifactId>resource-config</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!--<dependency>-->
 			<!--<groupId>org.postgresql</groupId>-->
 			<!--<artifactId>postgresql</artifactId>-->

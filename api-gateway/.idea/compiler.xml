@@ -11,6 +11,7 @@
         <module name="demo-spring-security" />
         <module name="discovery-service" />
         <module name="order-service" />
+        <module name="resource-config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="demo-spring-security" target="1.8" />
       <module name="discovery-service" target="1.8" />
       <module name="order-service" target="1.8" />
+      <module name="resource-config" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
