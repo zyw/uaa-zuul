@@ -9,6 +9,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 
 @SpringBootApplication
 @EnableDiscoveryClient
+//开启基于方法的声明式权限控制
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class OrderServiceApplication {
 
