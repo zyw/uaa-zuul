@@ -1,0 +1,2 @@
+security:
+  sessions: stateless

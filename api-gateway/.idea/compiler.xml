@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="api-gateway" />
         <module name="auth-server" />
+        <module name="demo-spring-security" />
         <module name="discovery-service" />
         <module name="order-service" />
       </profile>
@@ -15,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="api-gateway" target="1.8" />
       <module name="auth-server" target="1.8" />
+      <module name="demo-spring-security" target="1.8" />
       <module name="discovery-service" target="1.8" />
       <module name="order-service" target="1.8" />
     </bytecodeTargetLevel>
