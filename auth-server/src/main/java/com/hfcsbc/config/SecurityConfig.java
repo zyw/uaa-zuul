@@ -37,21 +37,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected UserDetailsService userDetailsService() {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withUsername("user_1").password("123456").authorities("USER").build());
-        manager.createUser(User.withUsername("user_2").password("123456").authorities("USER").build());
+        manager.createUser(User.withUsername("user_1").password("$2a$10$JtI00AXJ/NTxcB/vTQ.GiOCBVnVae0zSZtKZ7cqUL1DecU8MstCl6").authorities("USER").build());
+        manager.createUser(User.withUsername("user_2").password("$2a$10$JtI00AXJ/NTxcB/vTQ.GiOCBVnVae0zSZtKZ7cqUL1DecU8MstCl6").authorities("USER").build());
         return manager;
     }
 
-    /*@Bean
+    @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
-    }*/
+    }
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth
                 .userDetailsService(userDetailsService())
-                /*.passwordEncoder(passwordEncoder())*/;
+                .passwordEncoder(passwordEncoder());
     }
 
     @Bean
@@ -66,6 +66,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
-
+    public static void main(String[] args) {
+        String encode = new BCryptPasswordEncoder().encode("123456");
+        System.out.println(encode);
+    }
 
 }

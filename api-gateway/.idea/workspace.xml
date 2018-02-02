@@ -17,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ResourceServerConfig.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ResourceServerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/ResourceServerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -27,12 +27,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="AuthorizationServerConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/AuthorizationServerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="114" column="35" lean-forward="false" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/SecurityConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+              <folding>
+                <element signature="e#2387#2388#0" expanded="true" />
+                <element signature="e#2437#2438#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ResourceServerConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../resource-config/src/main/java/com/hfcsbc/config/ResourceServerConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
+            <state relative-caret-position="252">
               <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,26 +115,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hfcsbc/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiGatewayApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/hfcsbc/ApiGatewayApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="OrderServiceApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../order-service/src/main/java/com/hfcsbc/OrderServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -140,8 +145,6 @@
         <option value="$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/CustomTokenEnhancer.java" />
         <option value="$PROJECT_DIR$/../order-service/src/main/java/com/hfcsbc/controller/DemoController.java" />
         <option value="$PROJECT_DIR$/../order-service/src/main/java/com/hfcsbc/OrderServiceApplication.java" />
-        <option value="$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/AuthorizationServerConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/hfcsbc/ApiGatewayApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hfcsbc/config/SecurityConfig.java" />
@@ -152,6 +155,8 @@
         <option value="$PROJECT_DIR$/../order-service/pom.xml" />
         <option value="$PROJECT_DIR$/../auth-server/pom.xml" />
         <option value="$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/ResourceServerConfig.java" />
+        <option value="$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/AuthorizationServerConfig.java" />
+        <option value="$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
@@ -248,33 +253,33 @@
             </path>
             <path>
               <item name="api-gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="resource-config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api-gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="resource-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api-gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="api-gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="resource-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="api-gateway" type="b2602c69:ProjectViewProjectNode" />
-              <item name="order-service" type="462c0819:PsiDirectoryNode" />
+              <item name="resource-config" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hfcsbc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="api-gateway" type="b2602c69:ProjectViewProjectNode" />
+              <item name="resource-config" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -323,12 +328,31 @@
     </option>
     <option name="contentProportion" value="0.15035154" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
+  <component name="RunManager" selected="Application.SecurityConfig">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
+    </configuration>
+    <configuration name="SecurityConfig" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hfcsbc.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.hfcsbc.config.SecurityConfig" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="auth-server" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -434,13 +458,19 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.ApiGatewayApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.AuthServerApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.OrderServiceApplication" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.DiscoveryServiceApplication" />
       <item index="4" class="java.lang.String" itemvalue="Spring Boot.DemoSpringSecurityApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Application.SecurityConfig" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.SecurityConfig" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -455,12 +485,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517390880953</updated>
-      <workItem from="1517390883364" duration="16382000" />
+      <workItem from="1517390883364" duration="18447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16382000" />
+    <option name="totallyTimeSpent" value="18447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -481,12 +511,12 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3664865" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28972974" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15891892" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21108742" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21908316" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -579,35 +609,6 @@
         <state relative-caret-position="162">
           <caret line="21" column="67" lean-forward="false" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/repo/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE-sources.jar!/org/springframework/security/oauth2/config/annotation/builders/ClientDetailsServiceBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="99" column="19" lean-forward="true" selection-start-line="99" selection-start-column="19" selection-end-line="99" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/AuthorizationServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
-          <folding>
-            <element signature="e#2831#2832#0" expanded="false" />
-            <element signature="e#2892#2893#0" expanded="false" />
-            <element signature="e#5563#5564#0" expanded="false" />
-            <element signature="e#5611#5612#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,14 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../resource-config/src/main/java/com/hfcsbc/config/ResourceServerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../order-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -795,6 +788,46 @@
         <state relative-caret-position="504">
           <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repo/org/springframework/security/oauth/spring-security-oauth2/2.0.14.RELEASE/spring-security-oauth2-2.0.14.RELEASE-sources.jar!/org/springframework/security/oauth2/config/annotation/builders/ClientDetailsServiceBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="211" column="46" lean-forward="false" selection-start-line="211" selection-start-column="46" selection-end-line="211" selection-end-column="46" />
+          <folding>
+            <element signature="e#6811#6812#0" expanded="false" />
+            <element signature="e#6859#6860#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../resource-config/src/main/java/com/hfcsbc/config/ResourceServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/AuthorizationServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="114" column="35" lean-forward="false" selection-start-line="114" selection-start-column="29" selection-end-line="114" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../auth-server/src/main/java/com/hfcsbc/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding>
+            <element signature="e#2387#2388#0" expanded="true" />
+            <element signature="e#2437#2438#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
