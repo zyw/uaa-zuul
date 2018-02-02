@@ -67,6 +67,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         return new JwtAccessTokenConverter();
     }
 
+    /**
+     * 配置身份认证器，配置认证方式，TokenStore，TokenGranter，OAuth2RequestFactory
+     * @param endpoints
+     * @throws Exception
+     */
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         endpoints
@@ -94,6 +99,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         super.configure(endpoints);*/
     }
 
+    /**
+     * 对应于配置AuthorizationServer安全认证的相关信息，创建ClientCredentialsTokenEndpointFilter核心过滤器
+     * @param security
+     * @throws Exception
+     */
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
         security
@@ -103,6 +113,11 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .checkTokenAccess("isAuthenticated()");
     }
 
+    /**
+     * 配置OAuth2的客户端相关信息
+     * @param clients
+     * @throws Exception
+     */
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         //可以把下面信息写入数据库中，使用 clients.withClientDetails(ClientDetailsService clientDetailsService)
@@ -114,7 +129,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
             .and()
                 .withClient("webapp")
                 .scopes("xx2")
-                .authorizedGrantTypes("implicit","password");
+//                .secret("ddd1")
+                .authorizedGrantTypes("password", "authorization_code", "refresh_token");
     }
 
     /**
