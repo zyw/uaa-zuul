@@ -64,6 +64,8 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     public JwtAccessTokenConverter accessTokenConverter(){
         JwtAccessTokenConverter converter = new JwtAccessTokenConverter();
         converter.setSigningKey("123");
+        //自定义Token的内容
+        converter.setAccessTokenConverter(new CustomerAccessTokenConverter());
         return new JwtAccessTokenConverter();
     }
 
@@ -82,7 +84,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .tokenStore(tokenStore())
                 .accessTokenConverter(accessTokenConverter());
 
-       /* // 自定义token生成方式
+       /* // 自定义token生成方式*/
         TokenEnhancerChain tokenEnhancerChain = new TokenEnhancerChain();
         tokenEnhancerChain.setTokenEnhancers(Arrays.asList(customerEnhancer(), accessTokenConverter()));
         endpoints.tokenEnhancer(tokenEnhancerChain);
@@ -96,7 +98,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         tokenServices.setAccessTokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(1)); // 1天
         endpoints.tokenServices(tokenServices);
 
-        super.configure(endpoints);*/
+        super.configure(endpoints);
     }
 
     /**

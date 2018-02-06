@@ -36,3 +36,4 @@ security:
   oauth2:
     resource:
       filter-order: 3
+      token-type:
